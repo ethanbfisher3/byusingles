@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/byusingles/static/css/main.17150553.css",
+    "main.js": "/byusingles/static/js/main.91f9d305.js",
+    "static/js/453.44c80ea5.chunk.js": "/byusingles/static/js/453.44c80ea5.chunk.js",
+    "index.html": "/byusingles/index.html",
+    "main.17150553.css.map": "/byusingles/static/css/main.17150553.css.map",
+    "main.91f9d305.js.map": "/byusingles/static/js/main.91f9d305.js.map",
+    "453.44c80ea5.chunk.js.map": "/byusingles/static/js/453.44c80ea5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17150553.css",
+    "static/js/main.91f9d305.js"
+  ]
+}
