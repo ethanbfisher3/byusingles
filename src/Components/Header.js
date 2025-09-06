@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "wouter"
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -14,9 +15,9 @@ const Header = () => {
   return (
     <header className="header">
       <h3 className="header-text">
-        <a href="/" className="header-link">
+        <Link href="/" className="header-link">
           BYUSINGLES
-        </a>
+        </Link>
       </h3>
 
       {/* Hamburger Menu Button */}
@@ -38,39 +39,47 @@ const Header = () => {
 
       <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
         <div>
-          <a href="/tips" className="nav-link" onClick={closeMobileMenu}>
+          <Link href="/tips" className="nav-link" onClick={closeMobileMenu}>
             Finding a Date
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/date-ideas" className="nav-link" onClick={closeMobileMenu}>
+          <Link
+            href="/date-ideas"
+            className="nav-link"
+            onClick={closeMobileMenu}
+          >
             Date Ideas
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/plan-a-date" className="nav-link" onClick={closeMobileMenu}>
+          <Link
+            href="/plan-a-date"
+            className="nav-link"
+            onClick={closeMobileMenu}
+          >
             Plan a Date
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/events" className="nav-link" onClick={closeMobileMenu}>
+          <Link href="/events" className="nav-link" onClick={closeMobileMenu}>
             On-Campus Events
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/clubs" className="nav-link" onClick={closeMobileMenu}>
+          <Link href="/clubs" className="nav-link" onClick={closeMobileMenu}>
             Clubs
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/recipes" className="nav-link" onClick={closeMobileMenu}>
+          <Link href="/recipes" className="nav-link" onClick={closeMobileMenu}>
             Recipe Ideas
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/contact" className="nav-link" onClick={closeMobileMenu}>
+          <Link href="/contact" className="nav-link" onClick={closeMobileMenu}>
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
