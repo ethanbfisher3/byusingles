@@ -1,0 +1,119 @@
+/* Ad Manager Styles */
+.mobile-native-ad-container {
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+/* Ensure content doesn't overlap with mobile banner ads */
+@media (max-width: 768px) {
+  body:not(.home-page) {
+    padding-bottom: 80px; /* Space for bottom banner ad */
+    transition: padding-bottom 0.3s ease;
+  }
+
+  body:not(.home-page).banner-ad-closed {
+    padding-bottom: 0; /* Remove space when banner ad is closed */
+  }
+
+  .section {
+    padding-bottom: 100px; /* Extra padding for mobile banner */
+    transition: padding-bottom 0.3s ease;
+  }
+
+  body.home-page .section {
+    padding-bottom: 20px; /* Normal padding for home page */
+  }
+
+  body:not(.home-page).banner-ad-closed .section {
+    padding-bottom: 20px; /* Reduce padding when banner ad is closed */
+  }
+
+  /* Adjust footer position on mobile */
+  footer {
+    margin-bottom: 80px;
+    transition: margin-bottom 0.3s ease;
+  }
+
+  body.home-page footer {
+    margin-bottom: 0; /* No margin for home page */
+  }
+
+  body:not(.home-page).banner-ad-closed footer {
+    margin-bottom: 0; /* Remove margin when banner ad is closed */
+  }
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 480px) {
+  body:not(.home-page) {
+    padding-bottom: 70px;
+    transition: padding-bottom 0.3s ease;
+  }
+
+  body:not(.home-page).banner-ad-closed {
+    padding-bottom: 0;
+  }
+
+  .section {
+    padding-bottom: 90px;
+    transition: padding-bottom 0.3s ease;
+  }
+
+  body.home-page .section {
+    padding-bottom: 20px; /* Normal padding for home page */
+  }
+
+  body:not(.home-page).banner-ad-closed .section {
+    padding-bottom: 20px;
+  }
+
+  footer {
+    margin-bottom: 70px;
+    transition: margin-bottom 0.3s ease;
+  }
+
+  body.home-page footer {
+    margin-bottom: 0; /* No margin for home page */
+  }
+
+  body:not(.home-page).banner-ad-closed footer {
+    margin-bottom: 0;
+  }
+}
+
+/* Ensure ads don't interfere with navigation */
+@media (max-width: 768px) {
+  .header {
+    z-index: 1002; /* Higher than ads */
+  }
+
+  .nav {
+    z-index: 1001; /* Higher than ads */
+  }
+}
+
+/* Smooth transitions for ad visibility */
+.mobile-ad {
+  transition: all 0.3s ease;
+}
+
+/* Prevent content jumping when ads load */
+.mobile-native-ad-container {
+  min-height: 100px;
+}
+
+/* Ensure proper spacing around native ads */
+.mobile-native {
+  margin: 16px 0;
+}
+
+/* Optimize for touch interactions */
+@media (max-width: 768px) {
+  .mobile-ad-cta,
+  .mobile-ad-close,
+  .mobile-interstitial-cta,
+  .mobile-interstitial-skip {
+    min-height: 44px; /* Apple's recommended touch target size */
+    min-width: 44px;
+  }
+}

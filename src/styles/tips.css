@@ -1,0 +1,43 @@
+.get-real {
+  padding: 64px 15%;
+  padding-top: 0px;
+}
+
+/* Make text wider on responsive/mobile view */
+@media (max-width: 768px) {
+  .get-real {
+    padding: 64px 8%;
+    padding-top: 0px;
+  }
+}
+
+.get-real h3 {
+  font-size: 32px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.tips > p {
+  padding-top: 48px;
+}
+
+.tips {
+  background: var(--default-bg-color);
+  color: var(--default-text-color);
+}
+
+.tips-section {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.referral-list {
+  margin-bottom: 0px;
+}

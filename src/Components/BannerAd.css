@@ -1,0 +1,137 @@
+.banner-ad {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 600px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* Ensure ads don't overlap with header/footer */
+  max-height: calc(100vh - 200px);
+}
+
+.banner-ad:hover {
+  transform: translateY(-50%) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner-ad-left {
+  left: 20px;
+}
+
+.banner-ad-right {
+  right: 20px;
+}
+
+.banner-ad-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.banner-ad-header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-ad-label {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.banner-ad-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  text-align: center;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.banner-ad-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-ad-cta {
+  background: #ff4757;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.banner-ad-cta:hover {
+  background: #ff3742;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.banner-ad-footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-ad-size {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  .banner-ad {
+    display: none;
+  }
+}
+
+/* Animation for ad rotation */
+.banner-ad {
+  animation: adFloat 4s ease-in-out infinite;
+}
+
+@keyframes adFloat {
+  0%,
+  100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-52%);
+  }
+}

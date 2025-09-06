@@ -1,0 +1,479 @@
+.box-parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+/* Responsive box layout */
+@media (min-width: 768px) {
+  .box-parent {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-parent {
+    gap: 50px;
+    padding: 0;
+  }
+}
+
+/* Ensure box-parent doesn't overlap with side banner ads */
+@media (min-width: 1200px) {
+  body.banner-ads-present .box-parent {
+    max-width: calc(100vw - 400px);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.box-section {
+  padding: 50px 0px;
+  background: var(--default-bg-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 204px);
+}
+
+.box-section-narrow {
+  width: 87vw;
+}
+
+.subclubs-parent,
+.subclasses-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+}
+
+.page-description {
+  padding: 0px 5%;
+  padding-bottom: 40px;
+  color: var(--default-text-color);
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+/* Reduce spacing between description and filters on mobile */
+@media (max-width: 768px) {
+  .page-description {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive page description */
+@media (min-width: 768px) {
+  .page-description {
+    padding: 0px 10%;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-description {
+    padding: 0px 18%;
+  }
+}
+
+/* Ensure page description doesn't overlap with side banner ads */
+@media (min-width: 1200px) {
+  body.banner-ads-present .page-description {
+    max-width: calc(100vw - 400px);
+    margin: 0 auto;
+    padding: 0px 20px 40px 20px;
+  }
+}
+
+.page-description h4 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container h4 {
+  margin: 0px;
+}
+
+.baddy-slider {
+  padding: 0px;
+  margin: 0px;
+  height: 20px;
+}
+
+.box-times {
+  padding-left: 24px;
+}
+
+.box-section ul {
+  margin-top: 0px;
+}
+
+.small-information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: none;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Responsive box information */
+@media (min-width: 768px) {
+  .box-information {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-information {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+.box-information div {
+  font-size: 14px;
+}
+
+.box-reset {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.box-description,
+.box-description > p,
+.min-date-number,
+.box-department .box-information {
+  font-size: 14px;
+}
+
+.box,
+.course {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--inverted-bg-color);
+  color: var(--inverted-text-color);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  gap: 10px;
+}
+
+/* Responsive box sizing */
+@media (min-width: 768px) {
+  .box,
+  .course {
+    width: calc(50% - 15px);
+    max-width: 350px;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box,
+  .course {
+    width: auto;
+    max-width: 30vw;
+    padding: 30px;
+  }
+}
+
+.box-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Responsive box bottom layout */
+@media (min-width: 768px) {
+  .box-bottom {
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-bottom {
+    gap: 30px;
+  }
+}
+
+.box-link {
+  width: fit-content;
+}
+
+.box-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.box-image {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+/* Responsive box images */
+@media (min-width: 768px) {
+  .box-image {
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-image {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+.category-checkbox,
+.day-checkbox,
+.sort-radio {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: black;
+}
+
+.category-label,
+.day-label,
+.sort-label {
+  font-size: 14px;
+}
+
+.filter-section-side h3 {
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.sort-parent,
+.likeliness-values-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+/* .distances-parent, */
+.prices-parent,
+.categories-parent,
+.days-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: fit-content;
+  max-width: 200px;
+}
+
+/* Event categories that are already split into two columns */
+.event-categories .categories-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 340px;
+}
+
+/* Days columns for events page */
+.event-days .days-parent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 220px;
+}
+
+.days-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Recipe categories that are already split into two columns */
+.box-categories .categories-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 180px;
+}
+
+.filter-section-side {
+  position: absolute;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  font-size: 14px;
+  background: white;
+  width: 50vw;
+  z-index: 1000;
+  display: none;
+}
+
+/* Responsive filters */
+@media (min-width: 768px) {
+  .filter-section-side {
+    width: 25vw;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filter-section-side {
+    width: 13vw;
+  }
+}
+
+.filter-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 90px;
+  color: var(--default-text-color);
+}
+
+/* Responsive filter layout for mobile */
+@media (max-width: 768px) {
+  .filter-parent {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .categories-parent,
+  .prices-parent {
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .days-parent {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .event-days .days-parent {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .event-days h3 {
+    text-align: center;
+  }
+
+  .days-column {
+    display: block;
+  }
+
+  .event-categories .categories-parent {
+    max-width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .box-categories .categories-parent {
+    max-width: 100% !important;
+    flex-direction: column !important;
+  }
+}
+
+.filter-parent h3 {
+  margin-bottom: 5px;
+}
+
+.filter-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.filter-section-side .top {
+  position: absolute;
+  background: var(--byu-blue);
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 52px;
+}
+
+.filter-section-side .bottom {
+  position: absolute;
+  background: var(--byu-blue);
+  right: 0;
+  bottom: 60px;
+  width: 260px;
+  height: 52px;
+}
+
+.course-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.major-rizz {
+  color: green;
+}
