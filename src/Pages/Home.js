@@ -7,7 +7,10 @@ const Home = () => {
       <div className="information">
         <div className="image-container">
           {/* <img src="https://www.gideonphoto.com/blog/wp-content/uploads/2019/03/slc-temple-wedding-photos5866.jpg" /> */}
-          <img alt="BYU campus background" src="/images/home_background.png" />
+          <img
+            alt="BYU campus background"
+            src={`${process.env.PUBLIC_URL}/images/home_background.png`}
+          />
           <div className="image-overlay" />
         </div>
         <div className="text-parent">

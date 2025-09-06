@@ -67,23 +67,23 @@ export const Event = ({ event, index }) => {
 
   // Array of club images for clubs night events
   const clubImages = [
-    "/images/clubs/a_cappella_club.png",
-    "/images/clubs/baking_club.png",
-    "/images/clubs/come_follow_me_club.png",
-    "/images/clubs/dancing_club.png",
-    "/images/clubs/disney_club.png",
-    "/images/clubs/divine_comedy.png",
-    "/images/clubs/english_society.png",
-    "/images/clubs/exercise_club.png",
-    "/images/clubs/family_history_club.png",
-    "/images/clubs/food_science_club.png",
-    "/images/clubs/french_association.png",
-    "/images/clubs/gardening_club.png",
-    "/images/clubs/illustration_association.png",
-    "/images/clubs/its_just_dinner.png",
-    "/images/clubs/music_lovers_club.png",
-    "/images/clubs/speech_and_debate_club.png",
-    "/images/clubs/tall_club.png",
+    `${process.env.PUBLIC_URL}/images/clubs/a_cappella_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/baking_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/come_follow_me_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/dancing_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/disney_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/divine_comedy.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/english_society.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/exercise_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/family_history_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/food_science_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/french_association.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/gardening_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/illustration_association.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/its_just_dinner.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/music_lovers_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/speech_and_debate_club.png`,
+    `${process.env.PUBLIC_URL}/images/clubs/tall_club.png`,
   ]
 
   // Get random club image for clubs night events
@@ -215,17 +215,17 @@ export const Event = ({ event, index }) => {
         <img
           src={
             event.Title.toLowerCase().includes("football")
-              ? "/images/events/football.png"
+              ? `${process.env.PUBLIC_URL}/images/events/football.png`
               : event.Title.toLowerCase() === "clubs night"
               ? getRandomClubImage()
               : event.Title.toLowerCase().includes("study abroad") ||
                 event.Title.toLowerCase().includes("studyabroad") ||
                 event.Description?.toLowerCase().includes("study abroad") ||
                 event.Description?.toLowerCase().includes("studyabroad")
-              ? "/images/events/study_abroad.png"
+              ? `${process.env.PUBLIC_URL}/images/events/study_abroad.png`
               : event.Title.toLowerCase().includes("devotional") ||
                 event.Description?.toLowerCase().includes("devotional")
-              ? "/images/events/devotional.png"
+              ? `${process.env.PUBLIC_URL}/images/events/devotional.png`
               : event.ImgUrl
           }
           alt=""
