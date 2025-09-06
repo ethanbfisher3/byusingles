@@ -17,11 +17,11 @@ const recipes = [
     estimatedTime: 30,
     categories: ["Lunch", "Dinner"],
     description: "Spaghetti is a fast, cheap, and simple meal!",
-    imgSrc: "/images/recipes/spaghetti.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/spaghetti.png`,
   },
   {
     name: "Eggs, Beans, and Salsa",
-    imgSrc: "/images/recipes/eggs_beans_salsa.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/eggs_beans_salsa.png`,
     estimatedTime: 10,
     categories: ["Breakfast", "Lunch", "Dinner"],
     estimatedPrice: 5,
@@ -32,7 +32,7 @@ const recipes = [
   },
   {
     name: "BLT's",
-    imgSrc: "/images/recipes/blt.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/blt.png`,
     ingredients: {
       Bacon: "1/4 pound",
       Lettuce: "1 cup",
@@ -53,7 +53,7 @@ const recipes = [
   },
   {
     name: "Brownies",
-    imgSrc: "/images/recipes/brownies.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/brownies.png`,
     ingredients: { "Brownie Mix": "1 box", Eggs: "2", Oil: "1/4 cup" },
     categories: ["Dessert"],
     estimatedTime: 30,
@@ -64,7 +64,7 @@ const recipes = [
   },
   {
     name: "Chicken Tacos",
-    imgSrc: "/images/recipes/chicken_taco.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chicken_taco.png`,
     ingredients: {
       Chicken: "1 pound",
       Beans: "1 can",
@@ -108,7 +108,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "Simple yet elegant garlic butter pasta that's ready in just 15 minutes.",
-    imgSrc: "/images/recipes/garlic_butter_noodles.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/garlic_butter_noodles.png`,
   },
   {
     name: "Avocado Toast",
@@ -131,7 +131,7 @@ const recipes = [
     categories: ["Breakfast", "Lunch"],
     description:
       "Creamy avocado toast with a hint of lemon - a healthy and Instagram-worthy breakfast.",
-    imgSrc: "/images/recipes/avocado_toast.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/avocado_toast.png`,
   },
   {
     name: "Caprese Salad",
@@ -156,7 +156,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "A fresh and elegant Italian salad with tomatoes, mozzarella, and basil.",
-    imgSrc: "/images/recipes/caprese_salad.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/caprese_salad.png`,
   },
   {
     name: "One-Pan Chicken Fajitas",
@@ -185,7 +185,7 @@ const recipes = [
     categories: ["Dinner"],
     description:
       "Easy one-pan chicken fajitas with colorful peppers and authentic Mexican flavors.",
-    imgSrc: "/images/recipes/fajitas.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/fajitas.png`,
   },
   {
     name: "Cheesy Nachos",
@@ -208,7 +208,7 @@ const recipes = [
     categories: ["Snack", "Dinner"],
     description:
       "Loaded nachos with melted cheese and fresh toppings - perfect for game day or movie night.",
-    imgSrc: "/images/recipes/cheesy_nachos.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/cheesy_nachos.png`,
   },
   {
     name: "Chicken Alfredo",
@@ -236,7 +236,7 @@ const recipes = [
     categories: ["Dinner"],
     description:
       "Creamy and indulgent chicken alfredo pasta that's restaurant-quality and perfect for a special date night.",
-    imgSrc: "/images/recipes/chicken_alfredo.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chicken_alfredo.png`,
   },
   {
     name: "Banana Pancakes",
@@ -262,7 +262,7 @@ const recipes = [
     categories: ["Breakfast"],
     description:
       "Fluffy and naturally sweet banana pancakes that make for a delightful breakfast in bed.",
-    imgSrc: "/images/recipes/banana_pancakes.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/banana_pancakes.png`,
   },
   {
     name: "Breakfast Burrito",
@@ -285,7 +285,7 @@ const recipes = [
     categories: ["Breakfast"],
     description:
       "A hearty and portable breakfast burrito packed with protein and flavor.",
-    imgSrc: "/images/recipes/breakfast_burrito.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/breakfast_burrito.png`,
   },
   {
     name: "Chocolate Mug Cake",
@@ -312,7 +312,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "A quick and decadent chocolate cake that cooks in just 1 minute - perfect for instant dessert cravings.",
-    imgSrc: "/images/recipes/chocolate_mug_cake.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chocolate_mug_cake.png`,
   },
   {
     name: "Peanut Butter Cookies",
@@ -335,7 +335,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Classic peanut butter cookies with the signature criss-cross pattern - chewy, nutty, and irresistible.",
-    imgSrc: "/images/recipes/peanut_butter_cookies.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/peanut_butter_cookies.png`,
   },
 
   {
@@ -358,7 +358,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Gooey and crispy Rice Krispies treats that bring back childhood memories and are perfect for sharing.",
-    imgSrc: "/images/recipes/rice_krispie_treats.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/rice_krispie_treats.png`,
   },
   {
     name: "Apple Cinnamon Nachos",
@@ -381,7 +381,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "A fun and healthy dessert twist on nachos using fresh apples with cinnamon and caramel.",
-    imgSrc: "/images/recipes/cinnamon_apples.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/cinnamon_apples.png`,
   },
   {
     name: "S'mores Bars",
@@ -406,7 +406,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "All the flavors of campfire s'mores in convenient bar form - gooey marshmallows, chocolate, and graham crackers.",
-    imgSrc: "/images/recipes/smores_bar.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/smores_bar.png`,
   },
   {
     name: "Chocolate-Dipped Strawberries",
@@ -427,7 +427,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Elegant chocolate-dipped strawberries that are perfect for romantic occasions and special dates.",
-    imgSrc: "/images/recipes/chocolate_strawberries.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chocolate_strawberries.png`,
   },
   {
     name: "No-Bake Cheesecake",
@@ -451,7 +451,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Creamy and smooth no-bake cheesecake that's easy to make and perfect for any occasion.",
-    imgSrc: "/images/recipes/no_bake_cheesecake.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/no_bake_cheesecake.png`,
   },
   {
     name: "Chocolate-Covered Bananas",
@@ -471,7 +471,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Frozen chocolate-covered banana slices that are a healthy and delicious frozen treat.",
-    imgSrc: "/images/recipes/chocolate-covered-bananas.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chocolate-covered-bananas.png`,
   },
   {
     name: "Cinnamon Sugar Donuts",
@@ -500,7 +500,7 @@ const recipes = [
     categories: ["Dessert"],
     description:
       "Homemade baked donuts with a sweet cinnamon sugar coating - perfect for breakfast or dessert.",
-    imgSrc: "/images/recipes/cinnamon_doughnuts.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/cinnamon_doughnuts.png`,
   },
 
   // AI Generated Recipes
@@ -521,7 +521,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "A classic grilled cheese sandwich that's golden, gooey, and comforting.",
-    imgSrc: "/images/recipes/grilled_cheese.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/grilled_cheese.png`,
   },
   {
     name: "Tuna Salad",
@@ -544,7 +544,7 @@ const recipes = [
     categories: ["Lunch"],
     description:
       "A quick and protein-packed tuna salad that's great on its own or in a sandwich.",
-    imgSrc: "/images/recipes/tuna_salad.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/tuna_salad.png`,
   },
   {
     name: "Veggie Stir Fry",
@@ -567,7 +567,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "Colorful, quick, and healthy veggie stir fry in under 20 minutes.",
-    imgSrc: "/images/recipes/stir_fry.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/stir_fry.png`,
   },
 
   {
@@ -592,7 +592,7 @@ const recipes = [
     categories: ["Breakfast"],
     description:
       "A fluffy omelette that's easy to customize and quick to make.",
-    imgSrc: "/images/recipes/omelette.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/omelette.png`,
   },
   {
     name: "Chickpea Salad",
@@ -616,7 +616,7 @@ const recipes = [
     categories: ["Lunch", "Dinner", "Salad"],
     description:
       "A refreshing Mediterranean salad loaded with protein and flavor.",
-    imgSrc: "/images/recipes/chickpea_salad.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/chickpea_salad.png`,
   },
   {
     name: "Baked Sweet Potato",
@@ -638,7 +638,7 @@ const recipes = [
     estimatedTime: 60,
     categories: ["Lunch", "Dinner", "Vegetarian"],
     description: "Simple, nourishing, and naturally sweet baked sweet potato.",
-    imgSrc: "/images/recipes/baked_sweet_potato.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/baked_sweet_potato.png`,
   },
   {
     name: "Quesadilla",
@@ -658,7 +658,7 @@ const recipes = [
     estimatedTime: 10,
     categories: ["Lunch", "Snack"],
     description: "Crispy, cheesy, and endlessly customizable quesadilla.",
-    imgSrc: "/images/recipes/quesadilla.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/quesadilla.png`,
   },
   {
     name: "Fruit Smoothie",
@@ -679,7 +679,7 @@ const recipes = [
     categories: ["Breakfast", "Snack"],
     description:
       "Refreshing and naturally sweet fruit smoothie for any time of day.",
-    imgSrc: "/images/recipes/smoothie.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/smoothie.png`,
   },
   {
     name: "Egg Fried Rice",
@@ -702,7 +702,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "Fast, filling, and budget-friendly egg fried rice using leftovers.",
-    imgSrc: "/images/recipes/fried_rice.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/fried_rice.png`,
   },
   {
     name: "Turkey Sandwich",
@@ -724,7 +724,7 @@ const recipes = [
     categories: ["Lunch"],
     description:
       "A quick, protein-packed turkey sandwich that's ideal for on-the-go meals.",
-    imgSrc: "/images/recipes/turkey_sandwich.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/turkey_sandwich.png`,
   },
   {
     name: "Mini Pita Pizzas",
@@ -744,7 +744,7 @@ const recipes = [
     estimatedTime: 15,
     categories: ["Lunch", "Snack", "Dinner"],
     description: "Easy, fun-to-make mini pizzas using pita bread.",
-    imgSrc: "/images/recipes/pita_pizzas.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/pita_pizzas.png`,
   },
   {
     name: "Cucumber Sandwiches",
@@ -765,7 +765,7 @@ const recipes = [
     categories: ["Snack", "Lunch"],
     description:
       "Light, refreshing cucumber sandwiches perfect for tea time or summer snacks.",
-    imgSrc: "/images/recipes/cucumber_sandwiches.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/cucumber_sandwiches.png`,
   },
   {
     name: "Taco Salad",
@@ -788,7 +788,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "A crunchy, spicy taco-inspired salad that comes together quickly.",
-    imgSrc: "/images/recipes/taco_salad.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/taco_salad.png`,
   },
   {
     name: "Overnight Oats",
@@ -810,7 +810,7 @@ const recipes = [
     categories: ["Breakfast"],
     description:
       "Healthy and convenient make-ahead breakfast loaded with nutrients.",
-    imgSrc: "/images/recipes/overnight_oats.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/overnight_oats.png`,
   },
   {
     name: "Stuffed Bell Peppers",
@@ -835,7 +835,7 @@ const recipes = [
     categories: ["Dinner"],
     description:
       "A hearty and flavorful dinner with meat, rice, and melty cheese inside roasted peppers.",
-    imgSrc: "/images/recipes/stuffed_peppers.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/stuffed_peppers.png`,
   },
 
   {
@@ -861,7 +861,7 @@ const recipes = [
     categories: ["Lunch", "Dinner"],
     description:
       "Classic comfort food—tangy and savory beef filling piled into soft buns.",
-    imgSrc: "/images/recipes/sloppy_joe.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/sloppy_joe.png`,
   },
   {
     name: "Zucchini Fritters",
@@ -884,7 +884,7 @@ const recipes = [
     categories: ["Lunch", "Dinner", "Snack"],
     description:
       "Crispy zucchini fritters make a tasty side or vegetarian main dish.",
-    imgSrc: "/images/recipes/zucchini_fritters.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/recipes/zucchini_fritters.png`,
   },
 ]
 

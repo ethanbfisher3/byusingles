@@ -3,7 +3,7 @@ const places = [
     name: "Provo Farmers Market",
     mapSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.9467147884125!2d-111.6712989236048!3d40.23248696683182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d99ffbc44fe4f%3A0xf80b7a7a8af35062!2sProvo%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1726350046948!5m2!1sen!2sus",
-    imgSrc: "/images/date_ideas/farmers_market.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/date_ideas/farmers_market.png`,
     website: "http://www.provofarmersmarket.com/",
     rating: "★★★★★",
     pricing: "$0-$30/person",
@@ -21,7 +21,7 @@ const places = [
   },
   {
     name: "Pickleball",
-    imgSrc: "/images/date_ideas/pickleball.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/date_ideas/pickleball.png`,
     description:
       "Pickleball is a great way to spend time with a girl! It allows for exercise but it's easy enough to keep a conversation going too!",
     minDateNumber: 0,
@@ -55,7 +55,7 @@ const places = [
   },
   {
     name: "Go for a Walk or Hike",
-    imgSrc: "/images/date_ideas/walk_or_hike.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/date_ideas/walk_or_hike.png`,
     minDateNumber: 0,
     description:
       "Going for a walk is a great first date idea. It allows you to get to know another person while you enjoy nature!",
@@ -95,7 +95,7 @@ const places = [
   },
   {
     name: "Cook some food!",
-    imgSrc: "/images/date_ideas/cook.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/date_ideas/cook.png`,
     minDateNumber: 0,
     categories: ["Cooking", "Food"],
     description:
@@ -128,7 +128,7 @@ const places = [
     name: "Skating",
     pricing: "$10-$15/person",
     majorRizz: true,
-    imgSrc: "/images/date_ideas/ice_skating.png",
+    imgSrc: `${process.env.PUBLIC_URL}/images/date_ideas/ice_skating.png`,
     minDateNumber: 0,
     categories: ["Recreation", "Sports"],
     description:
